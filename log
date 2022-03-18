@@ -183,3 +183,9 @@ Fri Mar 18 15:19:39 HSP 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 2345179
+Fri Mar 18 15:21:44 HSP 2022: 
+ list.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ tests:  12|0
+total_score: 70/70
+adb35a3

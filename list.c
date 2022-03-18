@@ -161,6 +161,15 @@ void * popCurrent(List * list) {
         return datoNodo;
     } 
 
+    if(x->next==NULL)
+    {
+        list->tail=x->prev;
+        list->tail->next=NULL;
+        list->current=x->prev;
+        free(x);
+        return datoNodo;
+    }
+
     if(list!=NULL)
     {
         x->prev->next=list->current->next;
