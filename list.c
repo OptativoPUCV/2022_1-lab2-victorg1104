@@ -32,9 +32,13 @@ List * createList() {
     List* listaNueva=(List*) malloc(sizeof(List));
 
     listaNueva->head=(Node*) malloc(sizeof(Node));
-    listaNueva->tail=(Node*) malloc(sizeof(Node));
-    listaNueva->current=(Node*) malloc(sizeof(Node));
+    listaNueva->head=NULL;
 
+    listaNueva->tail=(Node*) malloc(sizeof(Node));
+    listaNueva->tail=NULL;
+
+    listaNueva->current=(Node*) malloc(sizeof(Node));
+    listaNueva->current=NULL;
 
      return listaNueva;
 }
