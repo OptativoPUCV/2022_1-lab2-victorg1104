@@ -149,6 +149,17 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+    void *datoNodo=list->current->data;
+    Node *x = list->current; 
+
+    if(list!=NULL)
+    {
+        x->prev->next=list->current->next;
+        x->next->prev=list->current->prev;
+        list->current=x->next;
+        free(x);
+        return datoNodo;
+    }
     return NULL;
 }
 
