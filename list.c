@@ -155,6 +155,7 @@ void * popCurrent(List * list) {
     if(x->prev==NULL)
     {
         list->head=x->next;
+        list->head->prev==NULL;
         list->current=x->next;
         free(x);
         return datoNodo;
